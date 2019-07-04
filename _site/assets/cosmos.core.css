@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap');
+
+:root {
+    --blue: #2F00FF;
+    --pink: #D9009D;
+    --white: #FFFFFF;
+    --dark: #313131;
+    --black: #1C1C1C;
+}
+
+@-webkit-keyframes JumbotronBG {
+    0%{background-position:37% 0%}
+    50%{background-position:64% 100%}
+    100%{background-position:37% 0%}
+}
+@-moz-keyframes JumbotronBG {
+    0%{background-position:37% 0%}
+    50%{background-position:64% 100%}
+    100%{background-position:37% 0%}
+}
+@keyframes JumbotronBG {
+    0%{background-position:37% 0%}
+    50%{background-position:64% 100%}
+    100%{background-position:37% 0%}
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+html, body { padding-top: 30px; }
+
+.bg-dark { background-color: var(--black) !important; }
+
+.font-core { font-family: 'Quicksand' !important; }
+
+.jumbotron {
+    background: linear-gradient(165deg, #610045, #16007a);
+    background-size: 400% 400%;
+    -webkit-animation: JumbotronBG 6s ease infinite;
+    -moz-animation: JumbotronBG 6s ease infinite;
+    animation: JumbotronBG 6s ease infinite;
+}
+.jumbotron .brand-logo:hover {
+    animation: spin 4s ease infinite;
+    -moz-animation: spin 4s ease infinite;
+    -webkit-animation: spin 4s ease infinite;
+}
+.brand-logo {
+    height: 150px;
+    width: 150px;
+}
+.brand-logo-navbar {
+    height: 30px;
+    width: 30px;
+}
+.brand-title {
+    background: -webkit-linear-gradient(var(--pink), var(--blue));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

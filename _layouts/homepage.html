@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+<title>{{ site.title }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="{{ site.description }}">
+<meta name="theme-color" content="#{{ site.color }}">
+<!-- OpenGraph Tags -->
+<meta property="og:url" content="{{ site.url }}">
+<meta property="og:title" content="{{ site.title }}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{{ site.description }}">
+<!-- Vendor Assets -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/cosmos.core.css">
+<link rel="shortcut icon" href="/assets/favico.ico">
+</head>
+
+<body class="bg-dark text-white">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/">
+        <img class="brand-logo-navbar" src="/assets/logo.svg">
+        <span class="font-core brand-title">{{ site.title }}</span>
+    </a>
+</nav>
+<div class="jumbotron text-center">
+    <h1 class="display-2">
+        <img class="brand-logo" src="/assets/logo.svg">
+        <strong class="font-core brand-title">{{ site.title }}</strong>
+    </h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobileCapable">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</html>
